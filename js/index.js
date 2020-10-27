@@ -16,13 +16,28 @@ logo.addEventListener('mouseover', (e) => {
   logo.style.color = 'purple';
 });
 
+logo.addEventListener('mouseout', (e) => {
+  logo.style.color = 'black';
+});
+
 document.addEventListener('keydown', (e) => {
   if (event.key === 'Escape') {
     subHeaders.textContent = 'OUUCHH!!! :(';
   }
 });
 
-// Array.from(h4SubHeaders).forEach(sh) => {
+nav.addEventListener('dblclick', (e) => {
+  nav.style.backgroundColor = 'green';
+  nav.addEventListener('mouseout', (e) => {
+    nav.style.backgroundColor = 'white';
+  });
+});
+
+window.addEventListener('load', (e) => {
+  console.log('Hello World!');
+});
+
+// Array.from(h4SubHeaders).forEach() => {
 //     h4SubHeaders.addEventListener('mousemover', (e) => {
 //         h4SubHeaders.style.color = 'brown';
 //       });
