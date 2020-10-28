@@ -8,7 +8,6 @@ const subHeaders = document.querySelector('h2');
 const h4SubHeaders = document.querySelectorAll('h4');
 const bottomImg = document.querySelector('.content-destination img');
 const mapImg = document.querySelector('.img-content img');
-const footer = document.querySelector('footer.footer');
 
 logo.addEventListener('mouseover', (e) => {
   logo.style.color = 'purple';
