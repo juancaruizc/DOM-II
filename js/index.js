@@ -37,8 +37,22 @@ window.addEventListener('load', (e) => {
   console.log('Hello World!');
 });
 
-// Array.from(h4SubHeaders).forEach() => {
-//     h4SubHeaders.addEventListener('mousemover', (e) => {
-//         h4SubHeaders.style.color = 'brown';
-//       });
-// }
+document.addEventListener('keyup', (e) => {
+  if (event.key === 's') {
+    logo.style.color = 'red';
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (event.key === 's') {
+    logo.style.color = 'black';
+  }
+});
+
+subHeaders.addEventListener('wheel', (e) => {
+  subHeaders.style.fontSize = '5px';
+});
+
+h4SubHeaders.forEach((e) =>
+  e.addEventListener('copy', (x) => (x.target.style.fontSize = '5rem'))
+);
